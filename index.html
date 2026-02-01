@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fares Esaam | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Background Elements -->
+    <div class="background-container">
+        <div class="stars"></div>
+        <div class="stars-2"></div> <!-- Parallax Layer -->
+        <div class="shooting-star"></div>
+        <!-- <div class="blob blob-1"></div> -->
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">Fares.AI</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="profile-avatar">
+                    <img src="photo.png" alt="Fares Esaam" class="avatar-img">
+                </div>
+                <h1>Fares Esaam</h1>
+                <div class="typing-container">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p id="hero-description"
+                    style="max-width: 600px; margin: 0 auto 30px; color: var(--text-secondary); line-height: 1.6;"></p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                    <a href="#projects" class="btn btn-secondary">See My Work</a>
+                </div>
+
+                <div id="social-links-container" class="social-links fade-in-up" style="margin-top: 30px;">
+                    <!-- Socials injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <h3 class="section-title">Technical Skills</h3>
+                <p style="color: var(--text-secondary);">My data science toolkit.</p>
+            </div>
+            <div id="skills-container" class="skills-grid">
+                <!-- Skills injected via JS -->
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <h3 class="section-title">Experience</h3>
+            </div>
+            <div id="experience-container" class="card-grid">
+                <!-- Experience injected via JS -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header">
+                <h3 class="section-title">Selected Projects</h3>
+            </div>
+            <div id="projects-container" class="card-grid">
+                <!-- Projects injected via JS -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-container">
+            <div class="glass-panel smart-card">
+                <h3>Ready to collaborate?</h3>
+                <p>I'm currently available for freelance work and full-time roles.</p>
+                <a href="mailto:faresesaam001@gmail.com" class="btn btn-primary">Send me an email</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Fares Esaam. Designed with ❤️ and Code.</p>
+        </footer>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content glass-panel">
+            <button class="close-modal" aria-label="Close modal">&times;</button>
+            <div class="modal-scroll-area">
+                <div class="modal-banner-wrapper">
+                    <div class="modal-image-container" id="modal-image-container">
+                        <!-- Images injected via JS -->
+                    </div>
+                    <div class="carousel-dots" id="modal-dots"></div>
+                </div>
+                <div class="modal-text">
+                    <h2 id="modal-title">Project Title</h2>
+                    <div id="modal-desc">Project description goes here...</div>
+                    <div id="modal-tech" class="tags">
+                        <!-- Tech tags injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
