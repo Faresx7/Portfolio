@@ -76,7 +76,7 @@ const portfolioData = {
             link: "#"
         },
         {
-            title: "Cafe Sales Dashboard",
+            title: "Cafe Sales Performance Dashboard",
             subtitle: "Data Analytics",
             desc: "Cafe Sales Performance PowerBI Dashboard to support Decision-Making",
             details: `
@@ -114,7 +114,7 @@ const portfolioData = {
                 "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 183653.png"
             ],
             image: "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 171619.png",
-            tech: ["PowerBI", "Python", "Pandas", "Numpy"],
+            tech: ["PowerBI (DAX,Data Modeling, Visuals", "Python", "Pandas", "Numpy"],
             link: "#"
 
 
