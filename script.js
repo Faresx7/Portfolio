@@ -53,17 +53,84 @@ const portfolioData = {
     ],
     projects: [
         {
-            title: "EDA (Exploratory Data Analysis)",
+            title: `Ultra Marathon EDA Project
+            (Exploratory Data Analysis)`,
             subtitle: "Data Analysis",
-            desc: "A robust pipeline handling missing values, outlier detection, and standardization for large-scale noisy datasets.",
-            details: "This project involved a deep dive into a large dataset to uncover hidden patterns and anomalies. I utilized advanced data cleaning techniques to handle missing values and outliers, ensuring data integrity. Visualizations were created using Plotly and Seaborn to tell a compelling story about the data's distribution and relationships.",
+            desc: "An EDA project on Ultra Marathon races with an interactive GUI for exploring race data from 1980's, generating key insights from athlete performances.",
+            details: `
+            <h3>Detailed Project Description</h3>
+<p>This project is a <strong>comprehensive Exploratory Data Analysis (EDA)</strong> of Ultra-Marathon race datasets, aimed at uncovering trends, patterns, and insights about athletes’ performances across various races. It combines <strong>data preprocessing, visualization, and an interactive GUI</strong>, making it accessible for both technical and non-technical users.</p>
+
+<h3>1. Data Collection & Structure</h3>
+<ul>
+  <li>The dataset includes <strong>Ultra-Marathon race results</strong> with athlete information (age, gender, nationality), race details (distance, location, elevation), and performance metrics (completion times, rankings).</li>
+  <li>Data is structured into clean tabular formats, suitable for analysis and visualization.</li>
+</ul>
+
+<h3>2. Data Cleaning & Preprocessing</h3>
+<ul>
+  <li><strong>Missing Value Handling:</strong> Identifies incomplete entries and applies strategies like imputation or removal based on context.</li>
+  <li><strong>Outlier Detection:</strong> Flags extreme performance times or unrealistic data points that could skew analysis.</li>
+  <li><strong>Data Standardization:</strong> Ensures consistency in units (e.g., kilometers vs miles), formatting of categorical variables, and uniform datetime representations.</li>
+  <li><strong>Feature Engineering:</strong> Creates derived variables such as pace per kilometer, age group categories, and participation frequency to enrich analysis.</li>
+</ul>
+
+<h3>3. Exploratory Data Analysis (EDA)</h3>
+<ul>
+  <li><strong>Statistical Summaries:</strong> Computes mean, median, standard deviation, and percentiles for numeric variables.</li>
+  <li><strong>Trend Analysis:</strong> Examines performance trends across years, distances, and participant demographics.</li>
+  <li><strong>Comparative Visualizations:</strong> Uses histograms, boxplots, scatter plots, and heatmaps to compare performance across age groups, gender, and nationality.</li>
+  <li><strong>Correlation Analysis:</strong> Investigates relationships between variables like age, experience, and finishing time.</li>
+</ul>
+
+<h3>4. Interactive GUI</h3>
+<ul>
+  <li>Built with <strong>Streamlit</strong>, the GUI allows users to:
+    <ul>
+      <li>Dynamically generate visualizations like bar charts, line plots, and distribution plots.</li>
+      <li>Export analysis results and charts for further reporting or presentation.</li>
+    </ul>
+  </li>
+  <li>The GUI emphasizes <strong>user-friendliness</strong>, enabling non-programmers to explore data intuitively.</li>
+</ul>
+
+<h3>5. Insight Generation & Reporting</h3>
+<ul>
+  <li>Highlights key findings, such as:
+    <ul>
+      <li>Average completion times across distances and age groups.</li>
+      <li>Participation trends by gender and nationality.</li>
+      <li>Relationships between experience, age, and Ultra-Marathon performance.</li>
+    </ul>
+  </li>
+  <li>Supports decision-making for <strong>athletes, coaches, and race organizers</strong> by providing actionable insights.</li>
+</ul>
+
+<h3>6. Technologies & Practices</h3>
+<ul>
+  <li><strong>Python Libraries:</strong> pandas, numpy, matplotlib,Streamlit, plotly, Sklearn, Seaborn.</li>
+  <li><strong>Best Practices:</strong> Modular code design, reproducible workflows, clear documentation, and robust error handling in GUI.</li>
+  <li>Focus on scalability to handle larger datasets as new races and results are added.</li>
+</ul>
+
+<h3>7. Project Goal</h3>
+<ul>
+  <li>Transform raw Ultra-Marathon datasets into <strong>structured, insightful, and actionable information</strong>.</li>
+  <li>Provide a <strong>self-contained tool</strong> for data exploration, analysis, and visualization with minimal setup.</li>
+</ul>
+            
+            `,
             images: [
-                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop", // Placeholder 1
-                "https://images.unsplash.com/photo-1543286386-713df548e9cc?q=80&w=2070&auto=format&fit=crop", // Placeholder 2
-                "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076&auto=format&fit=crop"  // Placeholder 3
+                "assets/ultra marathon eda/لقطة شاشة 2026-02-01 202355.png",
+                "assets/ultra marathon eda/لقطة شاشة 2026-02-01 200521.png",
+                "assets/ultra marathon eda/لقطة شاشة 2026-02-01 200547.png",
+                "assets/ultra marathon eda/لقطة شاشة 2026-02-01 200616.png",
+                "assets/ultra marathon eda/لقطة شاشة 2026-02-01 200710.png",
+                "assets/ultra marathon eda/لقطة شاشة 2026-02-01 200746.png",
+                "assets/ultra marathon eda/لقطة شاشة 2026-02-01 201226.png"
             ],
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop", // Fallback/Main
-            tech: ["Python", "Pandas", "Plotly", "Seaborn", "NumPy", "Streamlit", "Jupyter notebook"],
+            tech: ["Python", "Pandas", "Numpy", "Plotly", "Matplotlib", "Seaborn", "Sklearn", "Streamlit", "Jupyter notebook"],
             link: "https://github.com/Faresx7/Depi_Amit_ONL3_AIS4_S4/tree/main/Data%20Analysis%20project"
         },
         {
@@ -75,9 +142,10 @@ const portfolioData = {
             tech: ["Scikit-Learn", "Matplotlib", "Seaborn"],
             link: "#"
         },
+
         {
             title: "Cafe Sales Performance Dashboard",
-            subtitle: "Data Analytics",
+            subtitle: "Data Analysis",
             desc: "Cafe Sales Performance PowerBI Dashboard to support Decision-Making",
             details: `
                 <p>This dashboard presents an analytical overview of café sales performance, built to support informed business and operational decision-making. It transforms raw transactional data into actionable insights across sales, products, locations, payment methods, and time.</p>
@@ -105,7 +173,6 @@ const portfolioData = {
                     <li>Enables fast, self-service analysis through interactive filtering, reducing dependency on manual reports</li>
                 </ul>  `,
             images: [
-                "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 171619.png",
                 "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 183343.png",
                 "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 183436.png",
                 "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 183451.png",
@@ -114,11 +181,19 @@ const portfolioData = {
                 "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 183653.png"
             ],
             image: "assets/PowerBI cafe dashboard/لقطة شاشة 2026-02-01 171619.png",
-            tech: ["PowerBI (DAX,Data Modeling, Visuals", "Python", "Pandas", "Numpy"],
-            link: "#"
-
-
+            tech: ["PowerBI (DAX,Data Modeling, Visuals)", "Python", "Pandas", "Numpy"],
+            link: "https://github.com/Faresx7/Fares_Esaam/tree/main/Cafe%20data%20cleaning"
+        },
+        {
+            title: "Text classification model",
+            subtitle: "Machine Learning & NLP",
+            desc: "Text classification model takes field of interest and tell you what will you be in future",
+            details: "Built a text classification model to classify text data",
+            image: "assets/text classification model/text classification model.png",
+            tech: ["Python", "Pandas", "Numpy", "Scikit-Learn"],
+            link: "https://github.com/Faresx7/Fares_Esaam/tree/main/Text%20classification%20model"
         }
+
     ]
 };
 
@@ -376,13 +451,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 3. Init Effects
-    // Small delay to ensure DOM injection is done (though synchronous above)
-    // 3. Init Effects
-    // Small delay to ensure DOM injection is done (though synchronous above)
     setTimeout(() => {
         initObservers();
         initTiltEffect();
         initModal();
+        // Note: Resume preview now uses iframe - no JavaScript needed
     }, 100);
 
     // Dynamic Title
@@ -409,3 +482,129 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/* --- Resume PDF Preview Loader --- */
+function loadResumePreview() {
+    console.log('[Resume Preview] Starting to load...');
+    const previewContainer = document.getElementById('resume-preview');
+
+    if (!previewContainer) {
+        console.error('[Resume Preview] Container element not found!');
+        return;
+    }
+
+    const resumePath = 'assets/resume/Fares_Esaam_Resume.pdf';
+    console.log('[Resume Preview] PDF path:', resumePath);
+
+    // Show loading state
+    previewContainer.innerHTML = `
+        <div class="preview-placeholder">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            <p>Loading PDF Preview...</p>
+        </div>
+    `;
+
+    // Try to load PDF.js from CDN
+    if (typeof pdfjsLib !== 'undefined') {
+        console.log('[Resume Preview] PDF.js already loaded');
+        loadPDFPreview(resumePath, previewContainer);
+    } else {
+        console.log('[Resume Preview] Loading PDF.js from CDN...');
+        // Load PDF.js dynamically
+        const script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+        script.onload = () => {
+            console.log('[Resume Preview] PDF.js loaded successfully');
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+            loadPDFPreview(resumePath, previewContainer);
+        };
+        script.onerror = (error) => {
+            console.error('[Resume Preview] Failed to load PDF.js:', error);
+            createFallbackPreview(previewContainer);
+        };
+        document.head.appendChild(script);
+    }
+}
+
+function loadPDFPreview(pdfPath, container) {
+    console.log('[PDF Render] Starting to load document:', pdfPath);
+
+    pdfjsLib.getDocument(pdfPath).promise.then(pdf => {
+        console.log('[PDF Render] PDF document loaded. Number of pages:', pdf.numPages);
+
+        // Get the first page
+        pdf.getPage(1).then(page => {
+            console.log('[PDF Render] Got page 1');
+
+            // Calculate scale to fit container width (approx 300px)
+            const desiredWidth = 260; // Adjusted for padding
+            const viewport = page.getViewport({ scale: 1.0 });
+            const scale = desiredWidth / viewport.width;
+            const scaledViewport = page.getViewport({ scale });
+
+            console.log('[PDF Render] Viewport:', scaledViewport.width, 'x', scaledViewport.height);
+
+            // Create canvas
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.height = scaledViewport.height;
+            canvas.width = scaledViewport.width;
+            canvas.style.maxWidth = '100%';
+            canvas.style.height = 'auto';
+            canvas.style.display = 'block';
+
+            // Render PDF page to canvas
+            const renderContext = {
+                canvasContext: context,
+                viewport: scaledViewport
+            };
+
+            console.log('[PDF Render] Rendering page to canvas...');
+            page.render(renderContext).promise.then(() => {
+                console.log('[PDF Render] Rendering complete! Displaying canvas...');
+
+                // Clear placeholder and add canvas
+                container.innerHTML = '';
+                container.appendChild(canvas);
+
+                // Add subtle fade-in animation
+                canvas.style.opacity = '0';
+                setTimeout(() => {
+                    canvas.style.transition = 'opacity 0.5s ease-in-out';
+                    canvas.style.opacity = '1';
+                    console.log('[PDF Render] Preview displayed successfully!');
+                }, 50);
+            }).catch(error => {
+                console.error('[PDF Render] Error rendering page to canvas:', error);
+                createFallbackPreview(container);
+            });
+        }).catch(error => {
+            console.error('[PDF Render] Error getting page 1:', error);
+            createFallbackPreview(container);
+        });
+    }).catch(error => {
+        console.error('[PDF Render] Error loading PDF document:', error);
+        console.error('[PDF Render] Error details:', error.message);
+        createFallbackPreview(container);
+    });
+}
+
+function createFallbackPreview(container) {
+    // Show a nice fallback message
+    container.innerHTML = `
+        <div class="preview-placeholder">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            <p style="margin: 0; font-size: 0.85rem;">Resume PDF</p>
+            <p style="margin: 0; font-size: 0.7rem; opacity: 0.7;">Click buttons below to view →</p>
+        </div>
+    `;
+}

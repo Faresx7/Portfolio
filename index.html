@@ -30,6 +30,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -86,6 +87,68 @@
             </div>
             <div id="projects-container" class="card-grid">
                 <!-- Projects injected via JS -->
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <div class="section-header">
+                <h3 class="section-title">Resume</h3>
+                <p style="color: var(--text-secondary);">My professional journey and qualifications.</p>
+            </div>
+
+            <div class="glass-panel smart-card resume-card">
+                <div class="resume-preview-container">
+                    <!-- Wrapper to clip scrollbar -->
+                    <div class="resume-preview-wrapper">
+                        <iframe
+                            src="assets/resume/Fares_Esaam_Resume.pdf#page=1&view=Fit&toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0"
+                            class="resume-preview-iframe" title="Resume Preview" scrolling="no">
+                        </iframe>
+                    </div>
+                    <div class="resume-overlay">
+                        <button class="btn btn-preview"
+                            onclick="window.open('assets/resume/Fares_Esaam_Resume.pdf', '_blank')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            Full View
+                        </button>
+                    </div>
+                </div>
+
+                <div class="resume-details">
+                    <div class="resume-header">
+                        <h3>Fares Esaam - Resume</h3>
+                        <span class="resume-badge">PDF Document</span>
+                    </div>
+                    <p class="resume-description">Download my complete resume to learn more about my professional
+                        experience, technical skills, and educational background in data science.</p>
+
+                    <div class="resume-actions">
+                        <a href="assets/resume/Fares_Esaam_Resume.pdf" download="Fares_Esaam_Resume.pdf"
+                            class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Download Resume
+                        </a>
+                        <a href="assets/resume/Fares_Esaam_Resume.pdf" target="_blank" class="btn btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            Open in New Tab
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
