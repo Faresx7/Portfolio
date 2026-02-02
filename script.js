@@ -59,66 +59,66 @@ const portfolioData = {
             desc: "An EDA project on Ultra Marathon races with an interactive GUI for exploring race data from 1980's, generating key insights from athlete performances.",
             details: `
             <h3>Detailed Project Description</h3>
-<p>This project is a <strong>comprehensive Exploratory Data Analysis (EDA)</strong> of Ultra-Marathon race datasets, aimed at uncovering trends, patterns, and insights about athletes’ performances across various races. It combines <strong>data preprocessing, visualization, and an interactive GUI</strong>, making it accessible for both technical and non-technical users.</p>
+            <p>This project is a <strong>comprehensive Exploratory Data Analysis (EDA)</strong> of Ultra-Marathon race datasets, aimed at uncovering trends, patterns, and insights about athletes' performances across various races. It combines <strong>data preprocessing, visualization, and an interactive GUI</strong>, making it accessible for both technical and non-technical users.</p>
 
-<h3>1. Data Collection & Structure</h3>
-<ul>
-  <li>The dataset includes <strong>Ultra-Marathon race results</strong> with athlete information (age, gender, nationality), race details (distance, location, elevation), and performance metrics (completion times, rankings).</li>
-  <li>Data is structured into clean tabular formats, suitable for analysis and visualization.</li>
-</ul>
+            <h3>1. Data Collection & Structure</h3>
+            <ul>
+            <li>The dataset includes <strong>Ultra-Marathon race results</strong> with athlete information (age, gender, nationality), race details (distance, location, elevation), and performance metrics (completion times, rankings).</li>
+            <li>Data is structured into clean tabular formats, suitable for analysis and visualization.</li>
+            </ul>
 
-<h3>2. Data Cleaning & Preprocessing</h3>
-<ul>
-  <li><strong>Missing Value Handling:</strong> Identifies incomplete entries and applies strategies like imputation or removal based on context.</li>
-  <li><strong>Outlier Detection:</strong> Flags extreme performance times or unrealistic data points that could skew analysis.</li>
-  <li><strong>Data Standardization:</strong> Ensures consistency in units (e.g., kilometers vs miles), formatting of categorical variables, and uniform datetime representations.</li>
-  <li><strong>Feature Engineering:</strong> Creates derived variables such as pace per kilometer, age group categories, and participation frequency to enrich analysis.</li>
-</ul>
+            <h3>2. Data Cleaning & Preprocessing</h3>
+            <ul>
+            <li><strong>Missing Value Handling:</strong> Identifies incomplete entries and applies strategies like imputation or removal based on context.</li>
+            <li><strong>Outlier Detection:</strong> Flags extreme performance times or unrealistic data points that could skew analysis.</li>
+            <li><strong>Data Standardization:</strong> Ensures consistency in units (e.g., kilometers vs miles), formatting of categorical variables, and uniform datetime representations.</li>
+            <li><strong>Feature Engineering:</strong> Creates derived variables such as pace per kilometer, age group categories, and participation frequency to enrich analysis.</li>
+            </ul>
 
-<h3>3. Exploratory Data Analysis (EDA)</h3>
-<ul>
-  <li><strong>Statistical Summaries:</strong> Computes mean, median, standard deviation, and percentiles for numeric variables.</li>
-  <li><strong>Trend Analysis:</strong> Examines performance trends across years, distances, and participant demographics.</li>
-  <li><strong>Comparative Visualizations:</strong> Uses histograms, boxplots, scatter plots, and heatmaps to compare performance across age groups, gender, and nationality.</li>
-  <li><strong>Correlation Analysis:</strong> Investigates relationships between variables like age, experience, and finishing time.</li>
-</ul>
+            <h3>3. Exploratory Data Analysis (EDA)</h3>
+            <ul>
+            <li><strong>Statistical Summaries:</strong> Computes mean, median, standard deviation, and percentiles for numeric variables.</li>
+            <li><strong>Trend Analysis:</strong> Examines performance trends across years, distances, and participant demographics.</li>
+            <li><strong>Comparative Visualizations:</strong> Uses histograms, boxplots, scatter plots, and heatmaps to compare performance across age groups, gender, and nationality.</li>
+            <li><strong>Correlation Analysis:</strong> Investigates relationships between variables like age, experience, and finishing time.</li>
+            </ul>
 
-<h3>4. Interactive GUI</h3>
-<ul>
-  <li>Built with <strong>Streamlit</strong>, the GUI allows users to:
-    <ul>
-      <li>Dynamically generate visualizations like bar charts, line plots, and distribution plots.</li>
-      <li>Export analysis results and charts for further reporting or presentation.</li>
-    </ul>
-  </li>
-  <li>The GUI emphasizes <strong>user-friendliness</strong>, enabling non-programmers to explore data intuitively.</li>
-</ul>
+            <h3>4. Interactive GUI</h3>
+            <ul>
+            <li>Built with <strong>Streamlit</strong>, the GUI allows users to:
+                <ul>
+                <li>Dynamically generate visualizations like bar charts, line plots, and distribution plots.</li>
+                <li>Export analysis results and charts for further reporting or presentation.</li>
+                </ul>
+            </li>
+            <li>The GUI emphasizes <strong>user-friendliness</strong>, enabling non-programmers to explore data intuitively.</li>
+            </ul>
 
-<h3>5. Insight Generation & Reporting</h3>
-<ul>
-  <li>Highlights key findings, such as:
-    <ul>
-      <li>Average completion times across distances and age groups.</li>
-      <li>Participation trends by gender and nationality.</li>
-      <li>Relationships between experience, age, and Ultra-Marathon performance.</li>
-    </ul>
-  </li>
-  <li>Supports decision-making for <strong>athletes, coaches, and race organizers</strong> by providing actionable insights.</li>
-</ul>
+            <h3>5. Insight Generation & Reporting</h3>
+            <ul>
+            <li>Highlights key findings, such as:
+                <ul>
+                <li>Average completion times across distances and age groups.</li>
+                <li>Participation trends by gender and nationality.</li>
+                <li>Relationships between experience, age, and Ultra-Marathon performance.</li>
+                </ul>
+            </li>
+            <li>Supports decision-making for <strong>athletes, coaches, and race organizers</strong> by providing actionable insights.</li>
+            </ul>
 
-<h3>6. Technologies & Practices</h3>
-<ul>
-  <li><strong>Python Libraries:</strong> pandas, numpy, matplotlib,Streamlit, plotly, Sklearn, Seaborn.</li>
-  <li><strong>Best Practices:</strong> Modular code design, reproducible workflows, clear documentation, and robust error handling in GUI.</li>
-  <li>Focus on scalability to handle larger datasets as new races and results are added.</li>
-</ul>
+            <h3>6. Technologies & Practices</h3>
+            <ul>
+            <li><strong>Python Libraries:</strong> pandas, numpy, matplotlib,Streamlit, plotly, Scikit-learn, Seaborn.</li>
+            <li><strong>Best Practices:</strong> Modular code design, reproducible workflows, clear documentation, and robust error handling in GUI.</li>
+            <li>Focus on scalability to handle larger datasets as new races and results are added.</li>
+            </ul>
 
-<h3>7. Project Goal</h3>
-<ul>
-  <li>Transform raw Ultra-Marathon datasets into <strong>structured, insightful, and actionable information</strong>.</li>
-  <li>Provide a <strong>self-contained tool</strong> for data exploration, analysis, and visualization with minimal setup.</li>
-</ul>
-            
+            <h3>7. Project Goal</h3>
+            <ul>
+            <li>Transform raw Ultra-Marathon datasets into <strong>structured, insightful, and actionable information</strong>.</li>
+            <li>Provide a <strong>self-contained tool</strong> for data exploration, analysis, and visualization with minimal setup.</li>
+            </ul>
+                        
             `,
             images: [
                 "assets/ultra marathon eda/لقطة شاشة 2026-02-01 202355.png",
@@ -130,7 +130,7 @@ const portfolioData = {
                 "assets/ultra marathon eda/لقطة شاشة 2026-02-01 201226.png"
             ],
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop", // Fallback/Main
-            tech: ["Python", "Pandas", "Numpy", "Plotly", "Matplotlib", "Seaborn", "Sklearn", "Streamlit", "Jupyter notebook"],
+            tech: ["Python", "Pandas", "Numpy", "Plotly", "Matplotlib", "Seaborn", "Scikit-learn", "Streamlit", "Jupyter notebook"],
             link: "https://github.com/Faresx7/Depi_Amit_ONL3_AIS4_S4/tree/main/Data%20Analysis%20project"
         },
         {
@@ -188,9 +188,71 @@ const portfolioData = {
             title: "Text classification model",
             subtitle: "Machine Learning & NLP",
             desc: "Text classification model takes field of interest and tell you what will you be in future",
-            details: "Built a text classification model to classify text data",
-            image: "assets/text classification model/text classification model.png",
-            tech: ["Python", "Pandas", "Numpy", "Scikit-Learn"],
+            details: `
+            <h2>Machine Learning & NLP Career Prediction System</h2>
+
+            <p>
+            This project is a <strong>Machine Learning and Natural Language Processing (NLP)</strong> application
+            designed to predict a user's <strong>potential future career field</strong> based on the text they provide,
+            such as their interests, skills, or personal goals.
+            </p>
+
+            <h2>Project Overview</h2>
+            <p>
+            The system follows a complete NLP pipeline, starting from raw text input and ending with a career
+            field prediction, while applying proper machine learning best practices to ensure reliable and
+            realistic results.
+            </p>
+
+            <h2>Text Processing & NLP Pipeline</h2>
+            <p>
+            User input text is processed using <strong>NLTK</strong> through multiple preprocessing steps:
+            </p>
+
+            <ul>
+            <li>Text normalization (lowercasing and noise removal)</li>
+            <li>Tokenization to split text into meaningful units</li>
+            <li>Lemmatization to reduce words to their root forms</li>
+            <li>Stopword removal to eliminate non-informative words</li>
+            </ul>
+
+            <p>
+            After preprocessing, the text is converted into numerical features using
+            <strong>TF-IDF Vectorization</strong>, allowing the model to capture the importance of words
+            relative to the entire dataset.
+            </p>
+
+            <h2>Machine Learning Model</h2>
+            <ul>
+            <li>The prediction model is built using <strong>Logistic Regression</strong>.</li>
+            <li>The model is trained on a <strong>pre-existing labeled dataset</strong> representing different career fields.</li>
+            <li>TF-IDF features are used as input to the model during training and prediction.</li>
+            </ul>
+
+            <h2>Model Reliability & Best Practices</h2>
+            <ul>
+            <li>Data leakage is avoided by applying preprocessing and vectorization only within the training pipeline.</li>
+            <li>Overfitting is minimized using proper data splitting and regularization techniques.</li>
+            <li>A clear separation between training and testing data is maintained to simulate real-world usage.</li>
+            </ul>
+
+            <h2>User Interface & Experience</h2>
+            <p>
+            The project includes a simple and interactive user interface that enhances usability and engagement:
+            </p>
+
+            <ul>
+            <li>A text input area for users to enter their information.</li>
+            <li>A <strong>Clear Chat</strong> button to reset the input instantly.</li>
+            <li>A <strong>Balloons animation</strong> feature to make the interaction more enjoyable and engaging.</li>
+            </ul>
+            `,
+            images: ["assets/nlp chatbot/لقطة شاشة 2026-02-02 145604.png",
+                    "assets/nlp chatbot/لقطة شاشة 2026-02-02 145617.png"
+
+            ]
+            ,
+            tech: ["Python", "NLTK", "Scikit-learn","Streamlit","TF-IDF Vectorizer"],
             link: "https://github.com/Faresx7/Fares_Esaam/tree/main/Text%20classification%20model"
         }
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+</head>
+
+<body>
+    <h1>JavaScript Test Page</h1>
+    <div id="test-output"></div>
+
+    <script>
+        console.log("Script is loading...");
+
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("DOMContentLoaded event fired!");
+            const output = document.getElementById('test-output');
+            if (output) {
+                output.innerHTML = '<p style="color: green; font-size: 20px;">✅ JavaScript is working!</p>';
+                console.log("Content updated successfully");
+            } else {
+                console.error("Could not find test-output element");
+            }
+        });
+
+        console.log("Script has finished loading");
+    </script>
+</body>
+
+</html>
