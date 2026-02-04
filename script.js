@@ -252,7 +252,7 @@ const portfolioData = {
 
             ]
             ,
-            tech: ["Python", "NLTK", "Scikit-learn","Streamlit","TF-IDF Vectorizer"],
+            tech: ["Python", "NLTK","Pipelines", "Scikit-learn","Streamlit","TF-IDF Vectorizer"],
             link: "https://github.com/Faresx7/Fares_Esaam/tree/main/Text%20classification%20model"
         }
 
