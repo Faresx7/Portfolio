@@ -23,16 +23,17 @@ const portfolioData = {
         }
     ],
     skills: [
-        { name: "Python", icon: "🐍" },
-        { name: "Pandas", icon: "🐼" },
-        { name: "NumPy", icon: "🔢" },
-        { name: "Scikit-Learn", icon: "🤖" },
-        { name: "SQL", icon: "🗄️" },
-        { name: "Matplotlib", icon: "📈" },
-        { name: "Git", icon: "🐙" },
-        { name: "Excel", icon: "📊" },
-        { name: 'Streamlit', icon: '📊' },
-        { name: 'PowerBI', icon: '📊' }
+        { name: "Python", icon: `<i class="fab fa-python" style="color: #3776AB;"></i>` },
+        { name: "Pandas", icon: `<i class="fas fa-table" style="color: #150458;"></i>` },
+        { name: "NumPy", icon: `<i class="fas fa-layer-group" style="color: #4d77cf;"></i>` },
+        { name: "Scikit-Learn", icon: `<i class="fas fa-brain" style="color: #F7931E;"></i>` },
+        { name: "SQL", icon: `<i class="fas fa-database" style="color: #003B57;"></i>` },
+        { name: "Matplotlib", icon: `<i class="fas fa-chart-line" style="color: #11557c;"></i>` },
+        { name: "Git", icon: `<i class="fab fa-git-alt" style="color: #F05032;"></i>` },
+        { name: "Excel", icon: `<i class="fas fa-file-excel" style="color: #217346;"></i>` },
+        { name: 'Streamlit', icon: `<i class="fas fa-stream" style="color: #FF4B4B;"></i>` },
+        { name: 'PowerBI', icon: `<i class="fas fa-chart-bar" style="color: #F2C811;"></i>` },
+        { name: 'Plotly', icon: `<i class="fas fa-chart-pie" style="color: #3f4f75;"></i>` }
     ],
     experience: [
         {
@@ -129,18 +130,53 @@ const portfolioData = {
                 "assets/ultra marathon eda/لقطة شاشة 2026-02-01 200746.png",
                 "assets/ultra marathon eda/لقطة شاشة 2026-02-01 201226.png"
             ],
-            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop", // Fallback/Main
             tech: ["Python", "Pandas", "Numpy", "Plotly", "Matplotlib", "Seaborn", "Scikit-learn", "Streamlit", "Jupyter notebook"],
             link: "https://github.com/Faresx7/Depi_Amit_ONL3_AIS4_S4/tree/main/Data%20Analysis%20project"
         },
         {
-            title: "Sales Prediction Model",
-            subtitle: "Predictive Analytics",
-            desc: "Forecasting future sales trends using regression analysis to assist in strategic inventory management.",
-            details: "Built a predictive model to forecast sales with high accuracy. The project involved feature engineering, model selection (Linear Regression, Random Forest), and hyperparameter tuning. The final model provides actionable insights for inventory planning.",
-            image: "https://images.unsplash.com/photo-1543286386-713df548e9cc?q=80&w=2070&auto=format&fit=crop", // Placeholder
-            tech: ["Scikit-Learn", "Matplotlib", "Seaborn"],
-            link: "#"
+            title:`Customer Segmentation Using RFM Analysis`,
+            subtitle:'RFM Analysis',
+            desc:'This project implements a Recency, Frequency, and Monetary (RFM) analysis model to evaluate customer behavior and value.',
+            details:`
+            
+    <h2>🚀 Project Name</h2>
+    <p><strong>Elevvo Customer Analytics: RFM Segmentation Engine</strong></p>
+
+    <h2>📝 Overview</h2>
+    <p>This project implements a <strong>Recency, Frequency, and Monetary (RFM)</strong> analysis model to evaluate customer behavior and value. By analyzing transactional data, the project categorizes the customer base into actionable segments, allowing for data-driven marketing strategies and optimized resource allocation. It transforms raw purchase history into a strategic roadmap for customer retention and growth.</p>
+
+    <h2>🎯 Objectives</h2>
+    <ul>
+        <li><strong>Data Engineering:</strong> Pre-process and clean transactional datasets, handling date-time conversions and calculating the 'snapshot' date for recency.</li>
+        <li><strong>Feature Extraction:</strong> Calculate the three core RFM metrics:
+            <ul>
+                <li><strong>Recency:</strong> Days since the last purchase.</li>
+                <li><strong>Frequency:</strong> Total number of transactions.</li>
+                <li><strong>Monetary:</strong> Total revenue generated per customer.</li>
+            </ul>
+        </li>
+        <li><strong>Behavioral Segmentation:</strong> Assigning scores (1-5) to each metric and grouping customers into segments such as <em>Champions, Loyal Customers, At-Risk, and Hibernating</em>.</li>
+        <li><strong>Strategic Reporting:</strong> Visualizing the distribution of segments to provide a clear picture of the business's customer health.</li>
+    </ul>
+
+    <h2>💎 Importance and Project Value</h2>
+    <p>In a competitive market, treating all customers equally is inefficient. This project provides:</p>
+    <ul>
+        <li><strong>Targeted Marketing:</strong> High-value customers (Champions) can be rewarded, while "At-Risk" customers can be targeted with win-back campaigns.</li>
+        <li><strong>Budget Optimization:</strong> Marketing spend is directed where it has the highest ROI based on proven purchase patterns.</li>
+        <li><strong>Churn Prevention:</strong> Early identification of declining frequency/recency helps in proactive churn management.</li>
+    </ul>
+
+    <h2>💻 Tech Used</h2>
+    <p>
+            `,
+            tech:['Python','Pandas','Numpy','Matplotlib','Seaborn','Jupyter Notebook'],
+            images:['assets/RFM Analysis/لقطة شاشة 2026-02-11 191946.png',
+                'assets/RFM Analysis/لقطة شاشة 2026-02-11 191953.png',
+                'assets/RFM Analysis/لقطة شاشة 2026-02-11 192009.png',
+                'assets/RFM Analysis/لقطة شاشة 2026-02-11 192018.png'
+            ],
+            link:'https://github.com/Faresx7/elevvo-data-analysis-internship/tree/main/RFM%20analysis'
         },
 
         {
@@ -248,11 +284,11 @@ const portfolioData = {
             </ul>
             `,
             images: ["assets/nlp chatbot/لقطة شاشة 2026-02-02 145604.png",
-                    "assets/nlp chatbot/لقطة شاشة 2026-02-02 145617.png"
+                "assets/nlp chatbot/لقطة شاشة 2026-02-02 145617.png"
 
             ]
             ,
-            tech: ["Python", "NLTK","Pipelines", "Scikit-learn","Streamlit","TF-IDF Vectorizer"],
+            tech: ["Python", "NLTK", "Pipelines", "Scikit-learn", "Streamlit", "TF-IDF Vectorizer"],
             link: "https://github.com/Faresx7/Fares_Esaam/tree/main/Text%20classification%20model"
         }
 
@@ -265,7 +301,7 @@ function renderContent() {
     const skillsContainer = document.getElementById('skills-container');
     if (skillsContainer) {
         skillsContainer.innerHTML = portfolioData.skills.map(skill => `
-            <div class="glass-panel skill-item fade-in">
+            <div class="glass-panel skill-item fade-in smart-card">
                 <div class="skill-icon">${skill.icon}</div>
                 <span>${skill.name}</span>
             </div>
