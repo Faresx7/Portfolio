@@ -23,17 +23,17 @@ const portfolioData = {
         }
     ],
     skills: [
-        { name: "Python", icon: `<i class="fab fa-python" style="color: #3776AB;"></i>` },
-        { name: "Pandas", icon: `<i class="fas fa-table" style="color: #150458;"></i>` },
-        { name: "NumPy", icon: `<i class="fas fa-layer-group" style="color: #4d77cf;"></i>` },
-        { name: "Scikit-Learn", icon: `<i class="fas fa-brain" style="color: #F7931E;"></i>` },
-        { name: "SQL", icon: `<i class="fas fa-database" style="color: #003B57;"></i>` },
-        { name: "Matplotlib", icon: `<i class="fas fa-chart-line" style="color: #11557c;"></i>` },
-        { name: "Git", icon: `<i class="fab fa-git-alt" style="color: #F05032;"></i>` },
-        { name: "Excel", icon: `<i class="fas fa-file-excel" style="color: #217346;"></i>` },
-        { name: 'Streamlit', icon: `<i class="fas fa-stream" style="color: #FF4B4B;"></i>` },
-        { name: 'PowerBI', icon: `<i class="fas fa-chart-bar" style="color: #F2C811;"></i>` },
-        { name: 'Plotly', icon: `<i class="fas fa-chart-pie" style="color: #3f4f75;"></i>` }
+        { name: "Python", icon: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skill-svg">` },
+        { name: "Pandas", icon: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" class="skill-svg">` },
+        { name: "NumPy", icon: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" class="skill-svg">` },
+        { name: "Scikit-Learn", icon: `<img src="https://cdn.simpleicons.org/scikitlearn/F7931E" class="skill-svg">` },
+        { name: "SQL", icon: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="skill-svg">` },
+        { name: "Matplotlib", icon: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" class="skill-svg">` },
+        { name: "Git", icon: `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="skill-svg">` },
+        { name: "Excel", icon: `<img src="https://img.icons8.com/color/96/microsoft-excel-2019.png" class="skill-svg">` },
+        { name: 'Streamlit', icon: `<img src="https://cdn.simpleicons.org/streamlit/FF4B4B" class="skill-svg">` },
+        { name: 'PowerBI', icon: `<img src="https://img.icons8.com/color/96/power-bi.png" class="skill-svg">` },
+        { name: 'Plotly', icon: `<img src="https://cdn.simpleicons.org/plotly/3F4F75" class="skill-svg">` }
     ],
     experience: [
         {
@@ -134,10 +134,10 @@ const portfolioData = {
             link: "https://github.com/Faresx7/Depi_Amit_ONL3_AIS4_S4/tree/main/Data%20Analysis%20project"
         },
         {
-            title:`Customer Segmentation Using RFM Analysis`,
-            subtitle:'RFM Analysis',
-            desc:'This project implements a Recency, Frequency, and Monetary (RFM) analysis model to evaluate customer behavior and value.',
-            details:`
+            title: `Customer Segmentation Using RFM Analysis`,
+            subtitle: 'RFM Analysis',
+            desc: 'This project implements a Recency, Frequency, and Monetary (RFM) analysis model to evaluate customer behavior and value.',
+            details: `
             
     <h2>🚀 Project Name</h2>
     <p><strong>Elevvo Customer Analytics: RFM Segmentation Engine</strong></p>
@@ -170,13 +170,13 @@ const portfolioData = {
     <h2>💻 Tech Used</h2>
     <p>
             `,
-            tech:['Python','Pandas','Numpy','Matplotlib','Seaborn','Jupyter Notebook'],
-            images:['assets/RFM Analysis/لقطة شاشة 2026-02-11 191946.png',
+            tech: ['Python', 'Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'Jupyter Notebook'],
+            images: ['assets/RFM Analysis/لقطة شاشة 2026-02-11 191946.png',
                 'assets/RFM Analysis/لقطة شاشة 2026-02-11 191953.png',
                 'assets/RFM Analysis/لقطة شاشة 2026-02-11 192009.png',
                 'assets/RFM Analysis/لقطة شاشة 2026-02-11 192018.png'
             ],
-            link:'https://github.com/Faresx7/elevvo-data-analysis-internship/tree/main/RFM%20analysis'
+            link: 'https://github.com/Faresx7/elevvo-data-analysis-internship/tree/main/RFM%20analysis'
         },
 
         {

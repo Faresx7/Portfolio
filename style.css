@@ -429,6 +429,14 @@ h1 {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
 .card-buttons {
     display: flex;
     gap: 12px;
@@ -462,8 +470,42 @@ h1 {
 }
 
 .skill-icon {
-    font-size: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    font-size: 2.2rem;
     margin-bottom: 8px;
+    transition: transform 0.3s var(--bounce-spring), box-shadow 0.3s ease;
+    -webkit-text-fill-color: initial;
+    color: initial;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+}
+
+.skill-item:hover .skill-icon {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.1);
+}
+
+.skill-svg {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    transition: transform 0.4s var(--bounce-spring), filter 0.4s ease;
+}
+
+.skill-item:hover .skill-svg {
+    transform: scale(1.15) translateY(-3px);
+    filter: drop-shadow(0 8px 12px rgba(255,255,255,0.15));
 }
 
 /* --- Resume Card --- */
@@ -733,28 +775,96 @@ footer {
 /* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .typing-container {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
     }
 
     .glass-nav {
-        bottom: 24px;
+        bottom: 16px;
         top: auto;
         justify-content: center;
-        width: 85%;
+        width: 95%;
+        padding: 8px 12px;
     }
 
     .logo {
         display: none;
     }
 
-    main {
-        padding-top: 60px;
-        padding-bottom: 120px;
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
     }
 
     .nav-links li a {
-        padding: 8px 12px;
-        font-size: 0.8rem;
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+
+    main {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+
+    section {
+        margin-bottom: 80px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+    .smart-card {
+        padding: 24px 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .skill-item {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .contact-container {
+        padding: 40px 20px;
+    }
+
+    .modal-text {
+        padding: 24px 20px;
+    }
+
+    .modal-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-dots {
+        bottom: 10px;
     }
 }
 
